@@ -8,7 +8,7 @@
 - Class pintu dijadikan subclass dari class Item
 - objek pintu dalam ruangan diinput ke arrItem
 - item roti pada ruangan dijadikan objek dari class makanan 
-- menggunakan override method pada subclass dari class Item
+- menggunakan override method pada class pintu dan makanan yang merupakan subclass dari class Item
 - sedikit merapihkan dengan mengelompokkan method berdasarkan fungsinya
 - keluar ruangan menjadi misi utama player
 # Tambahan
