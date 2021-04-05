@@ -14,6 +14,9 @@
 # Tambahan
 - menambahkan Class Makanan inheritance dari class Item
 - menambahkan sistem penambahan dan pengurangan kesehatan player
+    - makanan beracun (-)10 poin kesehatan Player
+    - makanan sehat (+)10 poin kesehatan Player
+    - sekali gagal menebak angka pada quest (-)20 poin kesehatan Player
 - menambahkan class Quest
 - menambahkan Quest/miniGame saat ingin mengambil kunci dari NPC
 - menambahkan kondisi gameover yaitu saat player kehabisan tenaga untuk menyelesaikan quest
