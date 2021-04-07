@@ -3,7 +3,7 @@
 - NIM   : 1902810
 - Kelas : Pendidikan Ilmu Komputer 4B (sesi 2)
 # Modifikasi
-- beberapa fungsi di method pilihanAksi() milik Ruangan dan Player dijadikan method static
+- beberapa fungsi di method pilihanAksi() milik Ruangan dan Player dijadikan method static di class Aksi
 - menggunakan polymorpism pada saat mengeksekusi prosesAksi() untuk objItem
 - Class pintu dijadikan subclass dari class Item
 - objek pintu dalam ruangan diinput ke arrItem
@@ -12,6 +12,7 @@
 - sedikit merapihkan dengan mengelompokkan method berdasarkan fungsinya
 - keluar ruangan menjadi misi utama player
 # Tambahan
+- menambahkan class Aksi untuk menyimpan method-method yang diperlukan untuk menampilkan aksi
 - menambahkan Class Makanan inheritance dari class Item
 - menambahkan sistem penambahan dan pengurangan kesehatan player
     - makanan beracun (-)10 poin kesehatan Player
@@ -136,7 +137,7 @@ dan pada saat melakukan inputan pilihan user:
         getObjGameInfo().getObjPlayer().hapusItem(this);     //jika sudah dimakan maka item akan hilang
     }
 ```
-- menambahkan pilihan aksi dimakan untuk class Makanan pada method getAksi()
+- menambahkan pilihan aksi makan item untuk class Makanan pada method getAksi()
 ```
     public ArrayList<String> getAksi () {
         ArrayList<String> arrOut = new ArrayList<>();
@@ -215,7 +216,7 @@ method QuestTebakAngka:
                     System.out.println("***********************************");
                     ....
 ```
-- lalu menambahkan sistem pengurangan kesehatan Player jika gagal menebak angka dalam 5 kesempatan sekali quest.
+- lalu menambahkan sistem pengurangan kesehatan Player jika gagal menebak angka dalam 5 kesempatan sekali quest. jika menang Player dapat kunci, jika kalah kesehatan Player dikurangi 50 (mohon maaf sebenarnya pengurangan kesehatannya harusnya 20 poin, hanya saja lupa diganti)
 ```
                     if (questWin){
                         System.out.println("\nKunci diberikan pada player");
